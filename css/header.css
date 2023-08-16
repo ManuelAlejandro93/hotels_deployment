@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Pacifico&family=Roboto:wght@300&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.body {
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100%;
+  color: white;
+}
+.header .contenedorDeHeader {
+  position: absolute;
+  top: 0px;
+  padding: 48px 48px 28px;
+  width: 100%;
+  height: 500px;
+  background-image: url("../assets/4.merced-del-alto.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.header .contenedorDeHeader .h1 {
+  font-size: 90px;
+  padding-bottom: 16px;
+  font-family: "Pacifico", "cursive";
+}
+.header .contenedorDeHeader .contenedorFiltros {
+  width: 100%;
+  padding: 10px 0;
+}
+.header .contenedorDeHeader .contenedorFiltros .flexFiltros {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.header .contenedorDeHeader .contenedorFiltros .filtro {
+  background-color: white;
+  text-decoration: none;
+  font-family: "Roboto", serif;
+  background-color: rgba(255, 255, 255, 0.7490196078);
+  width: 200px;
+  height: 39px;
+  border: solid gray 1px;
+  opacity: 0.7;
+  padding-left: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+.header .contenedorDeHeader .contenedorFiltros .filtro:hover {
+  background-color: hsla(0, 0%, 80%, 0.749);
+}
+.header .contenedorDeHeader .contenedorFiltros .selectCountry {
+  background-image: url("../assets/locationIcon.png");
+  background-size: 9%;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 3px;
+}
+.header .contenedorDeHeader .contenedorFiltros .checkIn {
+  background-image: url("../assets/locationIcon.png");
+  background-size: 9%;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 3px;
+  background-image: url("../assets/CheckIn.png");
+  background-size: 10%;
+}
+.header .contenedorDeHeader .contenedorFiltros .checkOut {
+  background-image: url("../assets/locationIcon.png");
+  background-size: 9%;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 3px;
+  background-image: url("../assets/CheckOut.png");
+}
+.header .contenedorDeHeader .contenedorFiltros .prices {
+  background-image: url("../assets/locationIcon.png");
+  background-size: 9%;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 3px;
+  background-image: url("../assets/priceIcon.png");
+}
+.header .contenedorDeHeader .contenedorFiltros .sizes {
+  background-image: url("../assets/locationIcon.png");
+  background-size: 9%;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 3px;
+  background-image: url("../assets/bedIcon.jpg");
+}
+.header .contenedorDeHeader .contenedorFiltros .clear {
+  background-color: rgba(51, 51, 51, 0.88);
+  border: 2px white solid;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  color: white;
+  width: 97px;
+  height: 38px;
+  border-radius: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.header .contenedorDeHeader .contenedorFiltros .clear:hover {
+  background-color: hsla(0, 0%, 10%, 0.88);
+}
+.header .contenedorDeHeader .contenedorTexto {
+  padding-top: 16px;
+  position: relative;
+  top: 80px;
+}
+.header .contenedorDeHeader .contenedorTexto .textoFijo {
+  font-size: 48px;
+  font-family: "Dancing Script", "cursive";
+  padding: 9.6px 0 8px 3.2px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+.header .contenedorDeHeader .contenedorTexto .textoDinamico {
+  font-size: 23px;
+  font-family: "Roboto", "sans-serif";
+  padding: 18px 0 8px 3.2px;
+  font-weight: 600;
+  position: relative;
+  bottom: 30px;
+}
+
+.main {
+  position: relative;
+  top: 500px;
+  width: 100%;
+  display: flex;
+  row-gap: 20px;
+  -moz-column-gap: 25px;
+       column-gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  overflow-y: auto;
+  height: 500px;
+  overflow-x: hidden;
+}
+.main .divMain {
+  width: 420px;
+  height: 300px;
+  border-radius: 15px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.main .divMain .h2 {
+  color: white;
+  font-weight: bolder;
+  font-family: "Roboto", serif;
+  font-size: 28px;
+  width: 80%;
+  margin-bottom: 5px;
+  position: relative;
+  bottom: 130px;
+  left: 20px;
+}
+.main .divMain .contenedorArriba {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.main .divMain .contenedorArriba .img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 2;
+  margin-right: 10px;
+  position: relative;
+  bottom: 130px;
+  left: 20px;
+}
+.main .divMain .contenedorArriba .p {
+  color: white;
+  font-weight: 900;
+  font-family: "Roboto", serif;
+  font-size: 18px;
+  position: relative;
+  bottom: 130px;
+  left: 20px;
+}
+.main .divMain .contenedorAbajo {
+  color: white;
+  font-family: "Roboto", serif;
+  font-size: 16px;
+  display: flex;
+  position: relative;
+  bottom: 130px;
+  left: 20px;
+}
+.main .divMain .contenedorAbajo .pAbajo {
+  margin-right: 10px;
+}
+.main .divMain::before {
+  content: "";
+  display: block;
+  position: relative;
+  background: linear-gradient(45deg, black 0%, black 30%, transparent 100%);
+  border-radius: 15px;
+  width: 420px;
+  height: 300px;
+  opacity: 0.4;
+  transition: all 0.4s;
+}
+.main .divMain:hover::before {
+  background-color: black;
+  opacity: 0.5;
+}/*# sourceMappingURL=header.css.map */
